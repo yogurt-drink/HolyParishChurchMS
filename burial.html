@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{
+      margin-top: 50px;
+      background-color: #977fa6;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    select{
+  background-color: #ffff;
+  color: black;
+  font-size: medium;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+    .back button{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: rgb(53, 53, 53);
+                color: white;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-width: 0px;
+                display: block;
+                width: 20%;   
+                height: 50px; 
+                font-size: large;
+                position: absolute;
+                top:0;
+                right: 0;
+   }
+
+   .submit button{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #ddd;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-width: 0px;
+                display: block;
+                width: 100%;   
+                height: 50px; 
+                font-size: large;
+                position: absolute;
+                bottom:auto;;
+                left: 0;
+    }
+    button:hover{background-color: #4f4f4f; color: #ffff;}
+    
+            input{
+              padding: 10px;
+              width: max-content;
+              border-width: 1px;
+              background-color: white;
+            }
+    
+            input{
+              padding: 10px;
+              width: 300px;
+              border-width: 1px;
+              background-color: white;
+            }
+
+
+  </style>
+
+<body>
+
+<h1>Enter the Deceased's Information</h1>
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="mname">Middle Name:</label>
+  <input type="text" id="mname" name="mname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+</form>
+<form action="/action_page.php">
+    <label for="dd">Date of Death:</label>
+    <input type="date" id="dd" name="dd">
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="birthday">Date of Birth:</label>
+    <input type="date" id="birthday" name="birthday">
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="0"><br><br>
+  </form>
+  <form action="/action_page.php">
+    <label for="cstat">Civil Status:</label>
+    <select id="cstat" name="cstat">
+        <option value=" ">Select Status</option>
+        <option value="Single">Single</option>
+        <option value="Married">Married</option>
+        <option value="Civil Partnership">Civil Partnership</option>
+        <option value="Divorced">Divorced</option>
+        <option value="Separated">Separated</option>
+        <option value="Widowed">Widowed</option>
+    </select>
+  </form>
+  <form action="/action_page.php">
+    <h3>Family's Information</h3>
+    <h4>Mother:</h4>
+    <label for="nmother">Name<i>(maiden)</i>:</label>
+    <input type="text" id="nmother" name="nmother">
+    <h4>Father:</h4>
+    <label for="nfather">Name:</label>
+  <input type="text" id="nfather" name="nfather">
+  <h4>Spouse <i>(if any)</i>:</h4>
+  <label for="nspouse">Name:</label>
+  <input type="text" id="nspouse" name="nspouse">
+  <p>Residence:<label for="residence"></label></p>
+  <input type="text" id="residence" name="residence">
+  <br>
+  <label for="lastsacrament">Last Sacrament Received</label>
+  <select id="lastsacrament" name="lastsacrament">
+    <option value=" ">Select Sacrament</option>
+    <option value="Baptism">Baptism</option>
+    <option value="Reconciliation">Reconciliation</option>
+    <option value="Anointing of the Sick">Anointing of the Sick</option>
+    <option value="Eucharist">Eucharist</option>
+    <option value="Final Communion">Final Communion</option>
+  </select>
+  <br><br>
+  <label for="sickness">Sickness:</label>
+  <input type="sickness" id="sickness" name="sickness">
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="pburial">Place of Burial:</label>
+    <input type="pburial" id="pburial" name="pburial">
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="nminister">Name of Minister:</label>
+    <input type="nminister" id="nminister" name="nminister">
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="remarks">Remarks:</label>
+    <textarea type="remarks" id="remarks" class="remarks";></textarea>
+  </form>
+<br><br>
+<div class="submit">
+  <form action="sBurial.html">
+    <button><b>submit</b></button>
+</form>
+</div>
+
+</body>
+
+
+<div class="back">
+  <form action="home.html">
+      <button><b>back </b></button>
+  </form>
+
+ </div>
+</html>

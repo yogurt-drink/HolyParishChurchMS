@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{
+      margin-top: 50px;
+      background: linear-gradient(#ffff, #d5e2f6, #f3e8ed);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+select{
+  background-color: #ffff;
+  color: black;
+  font-size: medium;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home button{
+        background-image: url('homebut.png');
+        background-size: cover;
+        border-width: 1px;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        background-color: #ffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .back button{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: rgb(53, 53, 53);
+                color: white;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-width: 0px;
+                display: block;
+                width: 20%;   
+                height: 50px; 
+                font-size: large;
+                margin-left: 500px;
+                position: absolute;
+                top:0;
+                right: 0;
+   }
+
+   .submit button{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #ddd;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-width: 0px;
+                display: block;
+                width: 100%;   
+                height: 50px; 
+                font-size: large;
+                position: absolute;
+                bottom:auto;;
+                left: 0;
+    }
+    button:hover{background-color: #4f4f4f; color: #ffff;}
+    
+            input{
+              padding: 10px;
+              width: max-content;
+              border-width: 1px;
+              background-color: white;
+            }
+    
+            input{
+              padding: 10px;
+              width: 300px;
+              border-width: 1px;
+              background-color: white;
+            }
+
+  </style>
+<body>
+
+<h1>Enter the Union's Information</h1>
+<form action="/action_page.php">
+    <label for="marriage">Date of Marriage:</label>
+    <input type="date" id="marriage" name="marriage" value=" ">
+  </form>
+  <h3>Contracting Parties</h3>
+<form action="/action_page.php">
+  <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp First Name | Middle Name | Last Name</p>
+  <label for="name">Name(Mr.):</label>
+  <input type="text" id="name" name="name"  value=" ">
+</form>
+<br>
+  <form action="/action_page.php"> 
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18"  value=" ">
+</form>
+<br>
+<form action="/action_page.php"> 
+  <label for="cstat">Civil Status:</label>
+    <select id="cstat" name="cstat">
+        <option value=" ">Select Status</option>
+        <option value="Single">Single</option>
+        <option value="Divorced">Divorced</option>
+        <option value="Widowed">Widowed</option>
+    </select>
+</form>
+<br>
+  <form action="/action_page.php">
+    <label for="bplace">Birthplace:</label>
+    <input type="text" id="bplace" name="bplace"  value=" ">
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="residence">Residence:</label>
+    <input type="text" id="residence" name="residence"  value=" ">
+    <p>Parents' Information</p>
+    <label for="nmother">Mother's Name<i>(maiden):</i></label>
+    <input type="text" id="nmother" name="nmother"  value=" ">
+    <label for="nfather">Father's Name:</label>
+  <input type="text" id="nfather" name="nfather"  value=" ">
+  </form>
+   
+  <br><br>
+<form action="/action_page.php">
+  <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp First Name | Middle Name | Last Name</p>
+  <label for="name">Name(Ms.):</label>
+  <input type="text" id="name" name="name"  value=" ">
+</form>
+<br>
+  <form action="/action_page.php"> 
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18"  value=" ">
+</form>
+<br>
+<form action="/action_page.php"> 
+  <label for="cstat">Civil Status:</label>
+    <select id="cstat" name="cstat">
+        <option value=" ">Select Status</option>
+        <option value="Single">Single</option>
+        <option value="Divorced">Divorced</option>
+        <option value="Widowed">Widowed</option>
+    </select>
+</form>
+<br>
+  <form action="/action_page.php">
+    <label for="bplace">Birthplace:</label>
+    <input type="text" id="bplace" name="bplace"  value=" ">
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="residence">Residence:</label>
+    <input type="text" id="residence" name="residence"  value=" ">
+    <p>Parents' Information</p>
+    <label for="nmother">Mother's Name<i>(maiden):</i></label>
+    <input type="text" id="nmother" name="nmother"  value=" ">
+    <label for="nfather">Father's Name:</label>
+  <input type="text" id="nfather" name="nfather"  value=" ">
+  </form>
+</form>
+<form action="/action_page.php">
+    <h4>Witnesses</h4>
+    <label for="witness1">Witness(1):</label>
+<input type="text"id="witness1" name="witness1"  value=" ">
+<label for="w1residence">Residence:</label>
+    <input type="text" id="w1residence" name="w1residence"  value=" ">
+    <br><br>
+<label for="witness2">Witness(2):</label>
+<input type="text"id="witness2" name="witness2"  value=" ">
+<label for="w2residence">Residence:</label>
+<input type="text" id="w2residence" name="w2residence"  value=" ">
+</form>
+<br><br>
+<form action="/action_page.php">
+    <label for="npriest">Name of Priest Solemnizing Ceremony:</label>
+    <input type="npriest" id="npriest" name="npriest"  value=" ">
+  </form>
+  <br><br>
+  <form action="/action_page.php">
+    <label for="remarks">Remarks:</label>
+    <textarea type="remarks" id="remarks" class="remarks";></textarea>
+  </form>
+  <div class="submit">
+    <form action="sWedding.html">
+      <button><b>submit</b></button>
+  </form>
+  </div>
+
+  
+</body>
+ 
+<div class="back">
+  <form action="sWedding.html">
+      <button><b>back </b></button>
+  </form>
+
+ </div>
+ <div class="home">
+  <form action="home.html">
+    <button></button>
+  </form>
+</div>
+</html>

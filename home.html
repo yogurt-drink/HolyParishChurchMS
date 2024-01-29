@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url('iskitit.png');
+    background-attachment: fixed;
+    background-size: 1600px;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(44, 44, 44);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #151018;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width:80%;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: #ffffff;
+  width: 66.7%;
+  padding: 5px;
+  opacity: 0.5;
+  color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  opacity: 0.8;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #f9feff;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logout
+{
+    padding-left: 1400px;
+}
+
+.title
+{
+  background-color: #ccc;
+  background-blend-mode:overlay;
+  margin-top: 350px;
+ 
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 80%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Canonical Book of... 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Choose Event</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3>Add New</h3>
+          <a href="baptismal.html">Baptismal</a>
+          <a href="wedding.html">Wedding</a>
+          <a href="burial.html">Burial</a>
+        </div>
+        <div class="column">
+          <h3>Search - Edit</h3>
+          <a href="sBaptismal.html">Baptismal</a>
+          <a href="sWedding.html">Wedding</a>
+          <a href="sBurial.html">Burial</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="logout">
+    <a href="signup.html">Logout</a>
+</div>
+
+</div>
+<div class="title">
+  <h1> Holy Cross Parish Church Management System</h1>
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+
+<style>
+            body{
+                background-image: url('iskitit.png');
+
+            }
+            tbody{
+                font-style: normal;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .back button{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: rgb(53, 53, 53);
+                color: white;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-width: 0px;
+                display: block;
+                width: 20%;   
+                height: 50px; 
+                font-size: large;
+                margin-right: 500px;
+                position: absolute;
+                top:0;
+                left: 1;
+   }
+        
+.table button{
+padding: 15px;
+border-color: aliceblue;
+border-width: 1px;
+background-color: #ffffff91;
+background-blend-mode: screen;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff91;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+tr:hover {background-color: #ffffff71;}
+button:hover {background-color: #75737371;}
+
+.search-container input[type=text] {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid grey;
+  float: left;
+  width: 18%;
+  background: #f1f1f1;
+  margin-left: 1140px;
+ 
+}
+
+.search-container  button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: #ddd;
+  color: white;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-right: none;
+  cursor: pointer;
+}
+.search-container button:hover {
+  background: #ccc;
+}
+
+        </style>
+  
+ <body>
+<table class="table">
+
+    <thead>
+      <tr>
+        <th>#</th>
+        <th><h2>Fisrt Name</h2> </th>
+        <th><h2>Last name</h2></th>
+        <th>...</th>
+       
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Jonghyun</td>
+        <td>Kim</td>
+        <td>
+            <form action="dec1.html">
+                <button class="btn">Edit/View</button>
+            </form>
+          </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jesusa Purificacion</td>
+        <td>Sonora-Poe</td>
+        <td>
+            <form action="dec2.html">
+                <button class="btn">Edit/View</button>
+            </form>
+          </td>
+      </tr>
+      
+      <tr>
+        <th scope="row">3</th>
+        <td>Jose</td>
+        <td>Badillos</td>
+        <td>
+            <form action="dec3.html">
+                <button class="btn">Edit/View</button>
+            </form>
+          </td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td></td>
+        <td> </td>
+        <td>
+            <form action="dec4.html">
+                <button class="btn">Edit/View</button>
+            </form>
+        </td>
+      </tr>
+      
+    </tbody>
+
+        
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+    </body>
+   <div class="back">
+    <form action="home.html">
+        <button>back</button>
+    </form>
+
+   </div>
+       
+   
+   
+ 
+    
+    </table>
+    </html>

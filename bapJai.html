@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{
+      margin-top: 50px;
+      background-color: #b2c9ed;
+      background: linear-gradient(#e2e6ec, #b2c9ed,#93b7f0);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .home button{
+        background-image: url('homebut.png');
+        background-size: cover;
+        border-width: 1px;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        background-color: #ffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .submit button{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #ddd;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-width: 0px;
+                display: block;
+                width: 100%;   
+                height: 50px; 
+                font-size: large;
+                position: absolute;
+                bottom:auto;;
+                left: 0;
+    }
+    
+    .back button{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: rgb(53, 53, 53);
+                color: white;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-width: 3px;
+                border-color: white;
+                display: block;
+                width: 20%;   
+                height: 50px; 
+                font-size: large;
+                margin-left: 500px;
+                position: absolute;
+                top:0;
+                right: 0;
+   }
+   .print button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: rgb(53, 53, 53);
+                color: white;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-width: 3px;
+                border-color: white;
+                display: block;
+                width: 90%;   
+                height: 50px; 
+                font-size: large;
+                margin-left: 0px;
+                position: absolute;
+                top:0;
+                right: 0;
+
+   }
+   button:hover{background-color: #333f52; color: #93b7f0;}
+    
+            input{
+              padding: 10px;
+              width: max-content;
+              border-width: 1px;
+              background-color: white;
+            }
+  </style>
+<body>
+
+<h1>Child's Information</h1>
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="Jaira"><br><br>
+  <label for="mname">Middle Name:</label>
+  <input type="text" id="mname" name="mname" value=" "><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value="Farrales"><br><br>
+</form>
+<form action="/action_page.php">
+    <label for="baptismal">Date of Baptismal:</label>
+    <input type="date" id="baptismal" name="baptismal" value="2001-07-29">
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="birthday">Date of Birth:</label>
+    <input type="date" id="birthday" name="birthday" value="2000-07-29">
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="birthplace">Place of Birth:</label>
+    <input type="text" id="birthplace" name="birthplace" value="Dagupan City"><br><br>
+  </form>
+  <form action="/action_page.php">
+    <h3>Parents' Information</h3>
+    <h4>Mother:</h4>
+    <label for="nmother">Name<i>(maiden):</i></label>
+    <input type="text" id="nmother" name="nmother" value="Sharon Cayabyab Farrales">
+    <label for="bpmother">Birthplace:</label>
+    <input type="text" id="bpmother" name="bpmother" value="Bayambang, Pangasinan">
+    <label for="residence">Residence</label>
+    <input type="text" id="residence" name="residence" value="Bayambang, Pangasinan">
+    <h4>Father:</h4>
+    <label for="nfather">Name:</label>
+  <input type="text" id="nfather" name="nfather" value="Jaime Oliveros Embuido Jr.">
+  <label for="bpfather">Birthplace:</label>
+    <input type="text" id="bpfather" name="bpfather" value="Mangaldan, Pangasinan">
+    <label for="residence">Residence</label>
+    <input type="text" id="residence" name="residence" value="Mangaldan, Pangasinan">
+  </form>
+  <h3>Sponsors' Information:</h3>
+  <form action="/action_page.php">
+    <label for="sponsor1">Sponsor(1):</label>
+    <input type="text" id="sponsor1" name="sponsor1" value="Nerisa F. Celos">
+    <label for="s1residence">Residence:</label>
+    <input type="text" id="s1residence" name="s1residence" value="Makati City">
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="sponsor2">Sponsor(2):</label>
+    <input type="text" id="sponsor2" name="sponsor2" value="Eugene C. Farrales">
+    <label for="s2residence">Residence:</label>
+    <input type="text" id="s2residence" name="s2residence" value="Bayambang, Pangasinan">
+  </form>
+  <br><br>
+  <form action="/action_page.php">
+    <label for="nminister">Name of Minister:</label>
+    <input type="nminister" id="nminister" name="nminister" value="Rev. Fr. Elisar Ralphie Itchon">
+  </form>
+  <br><br>
+  <form action="/action_page.php">
+    <label for="remarks">Remarks:</label>
+    <textarea type="remarks" id="remarks" class="remarks";></textarea>
+  </form>
+  <div class="submit">
+    <form action="sBaptismal.html">
+      <button><b>submit</b></button>
+  </form>
+  </div>
+</body>
+<div class="print">
+  <form action="cert2.html">
+    <button><b>print</b></button>
+  </form>
+</div>
+
+<div class="back">
+  <form action="sBaptismal.html">
+      <button><b>back </b></button>
+  </form>
+ </div>
+ <div class="home">
+  <form action="home.html">
+    <button></button>
+  </form>
+</div>
+</html>
